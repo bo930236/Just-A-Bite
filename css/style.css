@@ -1,0 +1,480 @@
+* {
+    box-sizing: border-box;
+}
+
+.navbar {
+    box-shadow: -1.4px -1.4px 6px 0 #97a2a0;
+    /* position: fixed;
+    width: 100%;
+    top:0; */
+}
+
+.wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0px 12px;
+}
+
+.main-wrapper {
+    min-height: (100vh-350px);
+    overflow: auto;
+}
+
+.navbar .wrapper {
+    height: 84px;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.navbar_site-name a {
+    color: #489846;
+    font-family: Questrial;
+    font-size: 36px;
+    text-decoration: none;
+}
+
+.navbar_list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-family: MicrosoftJhengHei;
+    font-size: 18px;
+}
+
+.navbar_list li {
+    margin-left: 12px;
+    border-radius: 8px;
+    transition: #ffffff 0.1s ease-in;
+}
+
+.navbar_list li.active,
+.navbar_list li:hover {
+    background: #ff7286;
+}
+
+.navbar_list li.active a,
+.navbar_list li:hover a {
+    color: white;
+}
+
+.navbar_list li a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 13px 25px 14px;
+}
+
+.banner {
+    height: 480px;
+    background: url(../images/background.png) center/cover no-repeat;
+    background-color: rgba(0, 0, 0, .2);
+    background-blend-mode: multiply;
+}
+
+.banner h1 {
+    margin: 0;
+    color: white;
+    font-family: MicrosoftJhengHei;
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 480px;
+    text-align: center;
+    /*display: inline-block;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+}
+
+.section-lottery {
+    height: 767px;
+    background: url(../images/background-lottery.png) center/cover no-repeat;
+}
+
+.section-lottery.first-prize {
+    background-image: url(../images/first-prize.jpg);
+    opacity: 0.9;
+}
+
+.section-lottery.second-prize {
+    background-image: url(../images/second-prize.jpg);
+    opacity: 0.9;
+}
+
+.section-lottery.third-prize {
+    background-image: url(../images/third-prize.jpg);
+    opacity: 0.9;
+}
+
+.section-lottery.none-prize {
+    background-color: #292222;
+    opacity: 0.9;
+}
+
+.lottery-result {
+    max-width: 800px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px;
+    font-family: MicrosoftJhengHei;
+    text-align: center;
+}
+
+.lottery-result_title {
+    margin-bottom: 48px;
+}
+
+.lottery-result_btn {
+    max-width: 300px;
+    text-align: center;
+    background-color: #e62a45;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 12px 0px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.lottery-info {
+    max-width: 500px;
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    color: #322929;
+    font-family: MicrosoftJhengHei;
+    text-align: center;
+    padding: 40px 24px;
+    border-radius: 16px;
+}
+
+.hide {
+    display: none;
+}
+
+.lottery-info_title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #5ec1b6;
+    margin-bottom: 24px;
+}
+
+.lottery-info_detail {
+    display: flex;
+    align-items: flex-start;
+    border-bottom: solid 1px #cdcdcd;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+    font-size: 16px;
+}
+
+.lottery-info_detail-title {
+    font-weight: bold;
+    font-size: 18px;
+    width: 90px;
+}
+
+.lottery-info_detail-content {
+    flex: 1;
+    text-align: left;
+    margin-left: 12px;
+    line-height: 1.5em;
+}
+
+.lottery-info_btn {
+    max-width: 330px;
+    text-align: center;
+    background-color: #e62a45;
+    color: #ffffff;
+    padding: 16px 0px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+h2 {
+    margin: 0;
+}
+
+.section {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+.section_title {
+    display: inline-block;
+    font-family: MicrosoftJhengHei;
+    font-size: 36px;
+    font-weight: bold;
+    border-left: solid 15px #a3dea2;
+    padding-left: 17px;
+    margin-bottom: 36px;
+}
+
+.section_desc {
+    margin: 0px 0px 68px 0px;
+    font-family: MicrosoftJhengHei;
+    font-size: 16px;
+    line-height: 2em;
+}
+
+.button {
+    display: inline-block;
+    padding: 61px 80px;
+    border-radius: 10px;
+    margin: 0px 11.5px;
+    cursor: pointer;
+    transition: transform 0.1s;
+}
+
+.button:hover {
+    background-color: #97a2a0;
+    transform: scale(1.1);
+}
+
+.btn_order {
+    background-color: #a8e8e1;
+    font-family: MicrosoftJhengHei;
+    font-size: 36px;
+    font-weight: bold;
+    color: #3e613d;
+}
+
+.btn_query {
+    background-color: #f9f9b5;
+    font-family: MicrosoftJhengHei;
+    font-size: 36px;
+    font-weight: bold;
+    color: #3e613d;
+}
+
+.section_images {
+    display: flex;
+    margin: 0px 0px 48px 0px;
+}
+
+.section_images div {
+    width: 25%;
+}
+
+.section_images img {
+    width: 100%;
+}
+
+.section_comments {
+    display: flex;
+    margin-top: 72px;
+}
+
+.comment+.comment {
+    margin-left: 16px;
+}
+
+.comment {
+    height: 230px;
+    width: 33%;
+    border-radius: 5px;
+    border: solid 1px #c7e5ec;
+    box-shadow: -1.4px -1.4px 4px 0 #d8eaef;
+    padding: 16px;
+    position: relative;
+}
+
+.comment_customer {
+    display: inline-block;
+    position: absolute;
+    top: 18px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.comment_customer p {
+    margin-top: 12px;
+    line-height: 18px;
+    font-weight: bold;
+}
+
+.customer_avatar {
+    width: 105px;
+    height: 105px;
+}
+
+.comment_customer img {
+    width: 100%;
+    height: 100%;
+}
+
+.comment_content {
+    position: relative;
+    top: 40%;
+    font-family: MicrosoftJhengHei;
+    font-size: 16px;
+    line-height: 1.5em;
+}
+
+.faq-block {
+    margin: 0 auto;
+    max-width: 768px;
+}
+
+.faq-item {
+    display: flex;
+    text-align: left;
+    padding-bottom: 15px;
+    border-bottom: solid 2px #a6e2c0;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.faq-item+.faq-item {
+    margin-top: 24px;
+}
+
+.faq-item_number {
+    color: #70b282;
+    font-size: 24px;
+    margin-right: 16px;
+    line-height: 24px;
+    font-weight: bold;
+}
+
+.faq-item_content h2 {
+    font-size: 18px;
+    margin: 0;
+    font-weight: bold;
+    line-height: 24px;
+}
+
+.faq-item_content p {
+    font-size: 16px;
+    line-height: 1.5em;
+}
+
+.faq-item-hide {
+    height: 40px;
+}
+
+.footer_top {
+    background-color: #e8efee;
+    padding: 32px;
+    color: #484848;
+    font-family: MicrosoftJhengHei;
+}
+
+.footer_top .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_info {
+    margin-right: 16px;
+}
+
+.footer_site div {
+    font-family: Questrial;
+    font-size: 36px;
+    color: #489846;
+}
+
+.footer_site a {
+    text-decoration: none;
+    color: #484848;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #489846;
+}
+
+.footer_bottom {
+    padding: 15px;
+    text-align: center;
+    background-color: #35564b;
+    font-family: MicrosoftJhengHei;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+
+
+
+
+@media(max-width: 768px) {
+    .navbar .wrapper {
+        height: 120px;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0px;
+    }
+
+    .navbar_site-name {
+        margin-top: 10px;
+    }
+
+    .navbar_list {
+        display: flex;
+        width: 100%;
+    }
+
+    .navbar_list li {
+        flex: 1;
+        margin-left: 0;
+        border-radius: 0;
+        text-align: center;
+    }
+
+    .button {
+        margin: 12px 0px;
+    }
+
+    .main-wrapper {
+        margin: 0px 12px;
+    }
+
+    .section_images {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section_images div {
+        width: 100%;
+    }
+
+    .section_comments {
+        flex-direction: column;
+    }
+
+    .comment {
+        width: auto;
+    }
+
+    .comment+.comment {
+        margin-left: 0px;
+        margin-top: 82px;
+    }
+
+    .lottery-info {
+        width: 100%;
+    }
+
+    .footer_top .wrapper {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .footer_info {
+        margin-right: 0px;
+        margin-top: 16px;
+    }
+}
