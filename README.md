@@ -11,7 +11,7 @@ Just-A-Bite 餐廳網站
 ![Just-A-Bite 餐廳網站 Preview2](https://img.onl/9xmU7)
 
 ## Lottery
-- 使用 Javascript 寫抽獎功能
+- 使用 Javascript 完成抽獎功能
 - 使用 API 串接獎項
 - 點擊 "我要抽獎" 會顯示抽獎結果及圖片
 
